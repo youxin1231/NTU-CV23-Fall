@@ -28,7 +28,7 @@ def shrink(img, ratio):
 def yokoi_connectivity(img):
     height, width = img.shape
 
-    pad_img = np.zeros((height+2, width+2)) - 1
+    pad_img = np.zeros((height+2, width+2))
     pad_img[1:height+1, 1:width+1] = img
 
     output_img = np.zeros_like(img) - 1
